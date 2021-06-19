@@ -6,10 +6,6 @@ import SimpleSquareCard from "../components/myComponents/SimpleSquareCard";
 const MyComponents = (props :any) => {
     return(
         <View>
-        <View style={styles.header}>
-            <Text>My Component Screen</Text>
-            
-        </View>
         <View style={styles.cardContainer}>
         <SimpleSquareCard color='#8a5b53' textColor='white' onPress={() =>props.navigation.navigate('SquareCard')}>
             Square Card
