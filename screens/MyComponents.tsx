@@ -11,16 +11,16 @@ const MyComponents = (props :any) => {
             
         </View>
         <View style={styles.cardContainer}>
-        <SimpleSquareCard color='#8a5b53' textColor='white' onPress={props.navigate}>
+        <SimpleSquareCard color='#8a5b53' textColor='white' onPress={() =>props.navigation.navigate('SquareCard')}>
             Square Card
         </SimpleSquareCard>
-        <SimpleSquareCard color='#8a5b53' textColor='white' onPress={props.navigate}>
+        <SimpleSquareCard color='#8a88b2' textColor='white' onPress={props.navigate}>
             Square Card
         </SimpleSquareCard>
-        <SimpleSquareCard color='#8a5b53' textColor='white' onPress={props.navigate}>
+        <SimpleSquareCard color='#8ab288' textColor='white' onPress={props.navigate}>
             Square Card
         </SimpleSquareCard>
-        <SimpleSquareCard color='#8a5b53' textColor='white' onPress={props.navigate}>
+        <SimpleSquareCard color='#b088b2' textColor='white' onPress={props.navigate}>
             Square Card
         </SimpleSquareCard>
 

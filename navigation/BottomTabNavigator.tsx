@@ -14,6 +14,7 @@ import MyComponents from '../screens/MyComponents';
 import TabOneScreen from '../screens/Home';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 import Home from '../screens/Home';
+import SquareCardInfo from '../components/myComponents/componentInfo/SquareCardInfo';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -73,6 +74,11 @@ function TabTwoNavigator() {
         name="MyComponents"
         component={MyComponents}
         options={{ headerTitle: 'My Components' }}
+      />
+      <TabTwoStack.Screen
+        name="SquareCard"
+        component={SquareCardInfo}
+        options={{ headerTitle: 'Square Card' }}
       />
     </TabTwoStack.Navigator>
   );

@@ -19,4 +19,5 @@ export type TabOneParamList = {
 
 export type TabTwoParamList = {
   MyComponents: undefined;
+  'SquareCard': undefined
 };
