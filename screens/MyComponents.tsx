@@ -15,7 +15,7 @@ const MyComponents = (props :any) => {
             Square Card
         </SimpleSquareCard>
         <SimpleSquareCard color='#8a88b2' textColor='white' onPress={props.navigate}>
-            Square Card
+            CenterView
         </SimpleSquareCard>
         <SimpleSquareCard color='#8ab288' textColor='white' onPress={props.navigate}>
             Square Card
