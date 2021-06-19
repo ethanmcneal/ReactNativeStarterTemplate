@@ -9,7 +9,7 @@ export default function EditScreenInfo() {
 			<View style={styles.getStartedContainer}>
 				<View>
 					<Text style={styles.getStartedText}>
-						Welcome to my React Native Starting template!
+						Welcome to my Expo-React Native Starting template!
 					</Text>
 					<Text style={styles.subText}>
 						First off, configure Navigation Options in{" "}

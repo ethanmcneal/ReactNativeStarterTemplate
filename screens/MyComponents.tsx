@@ -1,11 +1,30 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import SimpleSquareCard from "../components/myComponents/SimpleSquareCard";
 
 
-const MyComponents = () => {
+const MyComponents = (props :any) => {
     return(
+        <View>
         <View style={styles.header}>
             <Text>My Component Screen</Text>
+            
+        </View>
+        <View style={styles.cardContainer}>
+        <SimpleSquareCard color='#8a5b53' textColor='white' onPress={props.navigate}>
+            Square Card
+        </SimpleSquareCard>
+        <SimpleSquareCard color='#8a5b53' textColor='white' onPress={props.navigate}>
+            Square Card
+        </SimpleSquareCard>
+        <SimpleSquareCard color='#8a5b53' textColor='white' onPress={props.navigate}>
+            Square Card
+        </SimpleSquareCard>
+        <SimpleSquareCard color='#8a5b53' textColor='white' onPress={props.navigate}>
+            Square Card
+        </SimpleSquareCard>
+
+        </View>
         </View>
     )
 }
@@ -14,7 +33,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         width: '100%'
-    }
+    },
+    cardContainer: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        margin: 20,
+    },
 })
 
 export default MyComponents
