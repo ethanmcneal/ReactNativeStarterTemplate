@@ -7,9 +7,9 @@ import { Text, View } from '../components/Themed';
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabOneScreen.tsx" />
+      <View style={styles.separator}/>
+      <EditScreenInfo />
+      <View style={styles.separator}  />
     </View>
   );
 }
@@ -25,8 +25,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   separator: {
-    marginVertical: 30,
+    marginVertical: 10,
     height: 1,
     width: '80%',
+    backgroundColor: '#222'
   },
 });
