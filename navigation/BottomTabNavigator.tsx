@@ -15,6 +15,7 @@ import TabOneScreen from '../screens/Home';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 import Home from '../screens/Home';
 import SquareCardInfo from '../components/myComponents/componentInfo/SquareCardInfo';
+import CenterViewInfo from '../components/myComponents/componentInfo/CenterViewInfo';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -79,6 +80,11 @@ function TabTwoNavigator() {
         name="SquareCard"
         component={SquareCardInfo}
         options={{ headerTitle: 'Square Card' }}
+      />
+      <TabTwoStack.Screen
+        name="CenterView"
+        component={CenterViewInfo}
+        options={{ headerTitle: 'Center View' }}
       />
     </TabTwoStack.Navigator>
   );
