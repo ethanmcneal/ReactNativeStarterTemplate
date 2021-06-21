@@ -5,9 +5,12 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
-import Navigation from './navigation';
+import AppNavigator from './navigation/AppNavigator';
+import { enableScreens } from 'react-native-screens';
+
 
 export default function App() {
+  enableScreens()
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
 
@@ -16,7 +19,7 @@ export default function App() {
   } else {
     return (
       <SafeAreaProvider>
-        <Navigation colorScheme={colorScheme} />
+        <AppNavigator />
         <StatusBar />
       </SafeAreaProvider>
     );
