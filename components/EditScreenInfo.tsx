@@ -1,9 +1,15 @@
 import * as WebBrowser from "expo-web-browser";
 import React from "react";
-import { StyleSheet, TouchableOpacity } from "react-native";
+import { Button, StyleSheet, TouchableOpacity } from "react-native";
 import { Text, View } from "./Themed";
 
 export default function EditScreenInfo() {
+
+	function handleHelpPress() {
+		WebBrowser.openBrowserAsync(
+			"https://docs.expo.io/get-started/create-a-new-app/#opening-the-app-on-your-phonetablet",
+		);
+	}
 	return (
 		<View>
 			<View style={styles.getStartedContainer}>
@@ -41,17 +47,14 @@ export default function EditScreenInfo() {
 							./screens/Home.tsx
 						</Text>
 					</View>
+						<Button title='Help' onPress={handleHelpPress}/>
 				</View>
 			</View>
 		</View>
 	);
 }
 
-function handleHelpPress() {
-	WebBrowser.openBrowserAsync(
-		"https://docs.expo.io/get-started/create-a-new-app/#opening-the-app-on-your-phonetablet",
-	);
-}
+
 
 const styles = StyleSheet.create({
 	getStartedContainer: {
