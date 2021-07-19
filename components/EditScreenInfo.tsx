@@ -16,18 +16,11 @@ export default function EditScreenInfo() {
 					</Text>
 					<View style={styles.codeHighlightContainer}>
 						<Text style={styles.homeScreenFilename}>
-							./navigation/BottomTabNavigator.tsx
-						</Text>
-					</View>
-					<Text style={styles.getStartedText}>&&</Text>
-					<View style={styles.codeHighlightContainer}>
-						<Text style={styles.homeScreenFilename}>
-							./navigation/index.tsx
+							./navigation/AppNavigator.tsx
 						</Text>
 					</View>
 					<Text style={styles.subText}>
-						Both files have comments to official React Navigation
-						docs
+						There you will find an example of a bottom tab navigator and a link to official docs
 					</Text>
 					<Text style={styles.subText}>
 						The "My Components" tab has examples for some custom
