@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, Text} from "react-native";
+import { StyleSheet} from "react-native";
+import {Text} from '../Themed'
 import { TouchableOpacity } from "react-native-gesture-handler";
 
 const SimpleSquareCard = (props :any) => {

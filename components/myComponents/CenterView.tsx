@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import {View} from '../Themed'
 
 const CenterView = (props :any) => {
     return (

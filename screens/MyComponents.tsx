@@ -1,11 +1,12 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text,} from "react-native";
+import {View} from '../components/Themed'
 import SimpleSquareCard from "../components/myComponents/SimpleSquareCard";
 
 
 const MyComponents = (props :any) => {
     return(
-        <View>
+        <View style={styles.screen}>
         <View style={styles.cardContainer}>
         <SimpleSquareCard color='#8a5b53' textColor='white' onPress={() =>props.navigation.navigate('SquareCard')}>
             Square Card
@@ -25,6 +26,9 @@ const MyComponents = (props :any) => {
     )
 }
 const styles = StyleSheet.create({
+    screen: {
+        flex: 1,
+    },
     header: {
         alignItems: 'center',
         justifyContent: 'center',

@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet} from 'react-native';
+import {View, Text} from '../../Themed'
 import CenterView from '../CenterView';
 
 const CenterViewInfo = () => {
